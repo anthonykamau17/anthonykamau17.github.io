@@ -1,0 +1,27 @@
+<!--
+  FAVICON — the small icon shown in browser tabs, bookmarks, etc.
+
+  This reuses the same "center-circle + dot" motif as the hero section's
+  background graphic, so the browser tab feels like part of the same
+  design system rather than a random icon.
+
+  Colors are hardcoded here (not linked to style.css) because favicons
+  are read directly by the browser, outside your page's CSS.
+    --bg     #0D0D0D  (matches --bg in style.css)
+    --accent #E8491D  (matches --accent in style.css)
+
+  Want something else instead, e.g. your initials? Easiest option:
+  replace the two <circle> + inner <circle> below with a <text> element,
+  e.g. <text x="50" y="66" font-family="Arial" font-size="60"
+  font-weight="700" fill="#E8491D" text-anchor="middle">Y</text>
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- dark rounded-square background -->
+  <rect width="100" height="100" rx="22" fill="#0D0D0D"/>
+
+  <!-- outer ring (echoes the hero's center-circle line) -->
+  <circle cx="50" cy="50" r="30" fill="none" stroke="#E8491D" stroke-width="5" opacity="0.55"/>
+
+  <!-- solid accent dot (echoes the hero's center-circle dot) -->
+  <circle cx="50" cy="50" r="10" fill="#E8491D"/>
+</svg>
